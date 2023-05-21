@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Bookshelf Apps</h1>
+      </header>
+    
+      <div class="tbhbuku" id="tbhbuku">
+        <p>klik disini untuk menambahkan buku baru</p>
+      </div>
+     
+     
+     <section class="cari">
+        <h2>Cari Buku (Opsional)</h2>
+        <form id="cari">
+          <label for="tittlebook">Judul</label>
+          <input id="tittlebook" type="text">
+          <button id="searchSubmit" type="submit">cari</button>
+        </form>
+      </section>
+    
+      <div class="status">
+        <div class="Blm_Dibaca" id="Blm_Dibaca">
+          <h4>Belum Selesai Dibaca</h4>
+        </div>
+        <div class="Sdh_Dibaca" id="Sdh_Dibaca">
+          <h4>Selesai Dibaca</h4>
+        </div>
+      </div>
+    
+      <div id="inputbuku">
+        <section class="infobuku">
+          <h2>Tambah Buku</h2>
+          <form id="form">
+            <div class="input">
+              <p>Judul Buku</p>
+              <input type="text" id="title"  class="input-form" maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required />
+            </div>
+            <div class="input">
+              <p>Penulis</p>
+              <input type="text" id="author" class="input-form" maxlength="60" pattern="^[a-zA-Z0-9_ ]*$" required />
+            </div>
+            <div class="input">
+              <p>Tahun</p>
+              <input type="text" id="year" class="input-form" maxlength="60" pattern="^[a-zA-Z0-9_ ]*$" required />
+            </div>
+            <div class="button">
+              <button type="reset" class="close" id="close">Close</button>
+              <button type="submit" class="save" id="save">Save</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    
+      <script src="./main.js"></script>
+      <script src="./Storage.js"></script>
+</body>
+</html>
